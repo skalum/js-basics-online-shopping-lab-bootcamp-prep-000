@@ -36,7 +36,7 @@ function viewCart() {
       itemsAndPrices.push(`${itemName} at $${price}`);
     }
 
-    console.log(`In your cart, you have ${itemsAndPrices.slice(0, length-1).join(", ")}, and ${itemsAndPrices.slice(length-1)}.`;
+    console.log(`In your cart, you have ${itemsAndPrices.slice(0, length-1).join(", ")}, and ${itemsAndPrices.slice(length-1)}.`);
   }
 }
 
