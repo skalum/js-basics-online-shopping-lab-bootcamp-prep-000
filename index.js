@@ -21,8 +21,6 @@ function viewCart() {
 
   if (length == 0) {
     console.log("Your shopping cart is empty.");
-  } else if (length == 1) {
-
   } else {
     const itemsAndPrices = [];
 
@@ -35,8 +33,13 @@ function viewCart() {
 
       itemsAndPrices.push(`${itemName} at $${price}`);
     }
-
-    console.log(`In your cart, you have ${itemsAndPrices.slice(0, length-1).join(", ")}, and ${itemsAndPrices.slice(length-1)}.`);
+    if (length == 1) {
+      console.log(`In your cart, you have ${itemsAndPrices}.`);
+    } else if (length == 2) {
+      console.log(`In your cart, you have ${itemsAndPrices.join(" and ")}.`);
+    } else {
+      console.log(`In your cart, you have ${itemsAndPrices.slice(0, length-1).join(", ")}, and ${itemsAndPrices.slice(length-1)}.`);
+    }
   }
 }
 
@@ -57,9 +60,3 @@ function getRandomInt(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min;
 }
-
-viewCart();
-addToCart("Apples");
-addToCart("Pears");
-addToCart("Plums");
-viewCart();
