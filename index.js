@@ -10,7 +10,10 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  cart.push({[item], getRandomInt(1,100)});
+  console.log(`${item} has been added to your cart.`);
+
+  return cart;
 }
 
 function viewCart() {
@@ -27,4 +30,10 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
+}
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
 }
