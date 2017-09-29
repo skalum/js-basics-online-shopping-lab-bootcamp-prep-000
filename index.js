@@ -33,7 +33,7 @@ function viewCart() {
 
       console.log(itemName);
 
-      itemsAndPrices.push(`${itemName} at ${price}`);
+      itemsAndPrices.push(`${itemName} at $${price}`);
     }
 
     console.log(`In your cart, you have ${itemsAndPrices.join(", ")}`);
