@@ -26,7 +26,7 @@ function viewCart() {
   for (var i = 0; i < (cart.length - 1); i++) {
     const item = [[cart[i]].keys()][0];
 
-    console.log(item);
+    debugger;
 
     itemsAndPrices.push(`${item} at ${cart[item]}`);
   }
