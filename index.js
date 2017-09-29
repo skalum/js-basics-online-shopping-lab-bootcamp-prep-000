@@ -26,7 +26,7 @@ function viewCart() {
   } else {
     const itemsAndPrices = [];
 
-    for (var i = 0; i < (cart.length - 1); i++) {
+    for (var i = 0; i < length; i++) {
       const item = cart[i];
       const itemName = Object.keys(item)[0];
       const price = item[itemName];
@@ -36,7 +36,7 @@ function viewCart() {
       itemsAndPrices.push(`${itemName} at $${price}`);
     }
 
-    console.log(`In your cart, you have ${itemsAndPrices.join(", ")}`);
+    console.log(`In your cart, you have ${itemsAndPrices.slice(0, length-1).join(", ")}`);
   }
 }
 
