@@ -9,9 +9,9 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
-  cart.push({[item]: getRandomInt(1,100)});
-  console.log(`${item} has been added to your cart.`);
+function addToCart(itemName) {
+  cart.push({[itemName]: getRandomInt(1,100)});
+  console.log(`${itemName} has been added to your cart.`);
 
   return cart;
 }
@@ -25,7 +25,9 @@ function viewCart() {
   const itemsAndPrices = [];
 
   for (var i = 0; i < (cart.length - 1); i++) {
-    console.log(cart[i]);
+    const itemName = Object.keys(cart[i])[0];
+
+    console.log(itemName);
 
     itemsAndPrices.push(`${item} at ${cart[item]}`);
   }
