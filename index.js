@@ -73,7 +73,12 @@ function removeFromCart(itemName) {
 }
 
 function placeOrder(cardNumber) {
-  // write your code here
+  if (cardNumber) {
+    console.log(`Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`);
+    cart = [];
+  } else {
+    console.log("Sorry, we don't have a credit card on file for you.");
+  }
 }
 
 function getRandomInt(min, max) {
