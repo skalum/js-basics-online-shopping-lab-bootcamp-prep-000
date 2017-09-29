@@ -55,4 +55,5 @@ function getRandomInt(min, max) {
 
 viewCart();
 addToCart("Apples");
+addToCart("Pears");
 viewCart();
