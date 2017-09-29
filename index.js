@@ -29,7 +29,7 @@ function viewCart() {
     itemsAndPrices.push(`${item} at ${cart[item]}`);
   }
 
-  
+
 }
 
 function total() {
