@@ -24,7 +24,7 @@ function viewCart() {
   const itemsAndPrices = [];
 
   for (var i = 0; i < cart.length; i++) {
-    console.log(cart[i]);
+    var keys = [cart[0]].keys();
   }
 }
 
