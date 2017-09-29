@@ -19,14 +19,13 @@ function addToCart(item) {
 function viewCart() {
   if (cart.length == 0) {
     console.log("Your shopping cart is empty.");
+    debugger;
   }
 
   const itemsAndPrices = [];
 
   for (var i = 0; i < (cart.length - 1); i++) {
     const item = [[cart[i]].keys()][0];
-
-    debugger();
 
     itemsAndPrices.push(`${item} at ${cart[item]}`);
   }
