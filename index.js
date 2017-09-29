@@ -18,11 +18,11 @@ function addToCart(itemName) {
 
 function viewCart() {
   const length = cart.length;
-  
+
   if (length == 0) {
     console.log("Your shopping cart is empty.");
   } else if (length == 1) {
-    
+
   } else {
     const itemsAndPrices = [];
 
@@ -33,9 +33,9 @@ function viewCart() {
 
       itemsAndPrices.push(`${itemName} at ${cart[itemName]}`);
     }
-  }
 
-  console.log(`In your cart, you have ${itemsAndPrices.join(", ")}`);
+    console.log(`In your cart, you have ${itemsAndPrices.join(", ")}`);
+  }
 }
 
 function total() {
