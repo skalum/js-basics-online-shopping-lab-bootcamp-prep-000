@@ -87,3 +87,11 @@ function getRandomInt(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min;
 }
+
+addToCart("Apples");
+addToCart("Oranges");
+addToCart("Pears");
+addToCart("Plums");
+viewCart();
+console.log(total());
+placeOrder(12345);
