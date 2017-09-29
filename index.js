@@ -25,7 +25,7 @@ function viewCart() {
   const itemsAndPrices = [];
 
   for (var i = 0; i < (cart.length - 1); i++) {
-    const itemName = cart[i].keys[0];
+    const itemName = cart[i].keys()[0];
 
     console.log(itemName);
 
