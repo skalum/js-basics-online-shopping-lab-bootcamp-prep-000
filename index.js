@@ -53,6 +53,8 @@ function total() {
 
     total += item[itemName];
   }
+
+  return total;
 }
 
 function removeFromCart(item) {
